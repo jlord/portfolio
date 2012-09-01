@@ -1,17 +1,21 @@
 /* PAGE */
-p {margin: 0px; padding: 0px; font-family: Baskerville, Garamond, Georgia, serif; font-size: 14px; color: #333;}
+p {margin: 0px; padding: 0px; font-family: Cambria, Garamond, Georgia, serif; font-size: 14px; color: #333;}
 a {color: #777; text-decoration: none;}
 /*a:hover {color: #E5E53E; border-bottom: 1px dotted #E5E53E;}*/
 a:hover {background: #E5E53E;}
 h1 {font-size: 22px; font-weight: normal; font-style: italic;}
+h4 {margin: 0px; padding: 0px 0px 8px 0px; font-family: Futura; text-transform: uppercase; font-size: 12px; font-weight: 300;}
 .field {margin: 8px 0px; letter-spacing: .2em;}
 
-body {margin: 0px; border: 12px solid #efefef;}
-#pageWrapper {height: 100%; width: 100%; box-shadow: 0 0 5px #888; box-shadow: 0 0 5px #888;}
+body {margin: 0px; background: #efefef;}
+#pageWrapper {margin: 12px; background: #fff; box-shadow: 0 0 5px #888; box-shadow: 0 0 5px #888;}
 #wrapper {position: relative; width: 1000px; margin: auto;	}
 
 /* HEADER */
-header {width: 1000px; overflow: auto; position: fixed; z-index: 10; padding-bottom: 1px;border-bottom: 3px solid #333; margin: 0px;}
+header {width: 1000px; overflow: auto;  z-index: 10; padding-bottom: 1px;border-bottom: 3px solid #333; margin: 0px; top: 0px;}
+/*header {width: 1000px; overflow: auto;  position: fixed; z-index: 10; padding-bottom: 1px;border-bottom: 3px solid #333; margin: 0px; top: 0px;}*/
+.logo {-webkit-transition: all 0.5s ease-out; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transform: rotate(-5deg); -moz-transform: rotate(-5deg); -o-transform: rotate(-5deg);}
+.logo:hover {-webkit-transform: rotate(5deg); -moz-transform: rotate(5deg); -o-transform: rotate(5deg);}
 #card {text-align: center; padding: 20px 0px;}
 #nav {width: 100%;}
 ul {position: relative; display: inline-block; list-style: none; margin: 0px; padding: 0px;}
@@ -19,10 +23,11 @@ ul {position: relative; display: inline-block; list-style: none; margin: 0px; pa
 .right {float: right;}
 li {float: left; padding: 5px; font-family: Futura; font-size: 12px; margin: 0px;}
 li a {padding: 0px; border: none; color: #333;}
-.category {font-style: italic; font-family: Baskerville;}
+.category {font-style: italic; font-family: Cambria;}
 
 /* CONTENT */
-#content {overflow: auto; padding: 195px 0px 50px 0px;}
+#content {overflow: auto; padding: 16px 0px 50px 0px;}
+/*#content {overflow: auto; padding: 195px 0px 50px 0px;}*/
 
 .span1 {width: 231.25px; margin: 0px 25px 0px 0px; float: left;}
 .span2 {width: 487.5px; margin: 0px 25px 0px 0px; float: left;}
@@ -34,9 +39,24 @@ li a {padding: 0px; border: none; color: #333;}
 .fixed {position: fixed; z-index: 10px;}
 .projImgColumn {position: relative; left: 256.25px;}
 .projTitle {font-family: Futura; font-size: 14px; text-transform: uppercase; font-weight: 500; padding-bottom: 8px;}
-.projSubTitle {font-family: Baskerville; font-style: italic; font-size: 14px; padding-bottom: 6px;}
-.projectDescription {font-family: Baskerville; font-size: 14px; line-height: .7em;}
+.projSubTitle {font-family: Cambria; font-style: italic; font-size: 14px; padding-bottom: 6px;}
+.projectDescription {font-family: Cambria; font-size: 14px; line-height: .7em;}
 .projType {font-family: Futura; font-size: 9px; color: #777; text-transform: uppercase; font-weight: normal; padding-top: 8px;}
 
 footer {position: fixed; z-index: 10; bottom: 20px; overflow: auto; width: 1000px; text-align: center;}
 footer p {font-size: 10px; font-style: italic;}
+
+/* POSTS */
+.post {padding-bottom: 25px; border-bottom: 2px solid #333;}
+.postTitle {font-family: Cambria; font-size: 22px; padding-bottom: 8px;}
+.postDate {font-family: Futura; letter-spacing: .2em; font-size: 9px; color: #777; text-transform: uppercase; padding-bottom: 25px;}
+.postImg {padding-bottom: 12px;}
+.postBody{font-size: 18px; line-height: 1.2em; padding-bottom: 14px;}
+.postMeta {border-top: 2px solid #333; padding-top: 8px; height: 70px; float: right; margin: 0px 0px 25px 25px;}
+.tags {font-family: Futura; letter-spacing: .2em; font-size: 9px; color: #777; text-transform: uppercase; }
+
+/* BLOG SIDEBAR */
+.blogSidebar, .blogSidebar p {text-align: right; color: #888; width: 200.25px; }
+.blogSidebar p {padding-bottom: 14px; font-size: 10px;}
+.blogSidebar {padding-left: 30px;}
+
